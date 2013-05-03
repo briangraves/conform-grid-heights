@@ -34,9 +34,40 @@
                 display: block;
                 width: 100%;
             }
+
+            pre {
+                padding: 1em;
+                border-width: 1px 1px 1px 5px;
+                border-style: solid;
+                border-color: #ccc;
+                background-color: #f9f9f9;
+                margin: 0;
+            }
+
+            p { 
+                margin: 0 0 1em;
+            }
+
+            small {
+                font-size: .7em;
+            }
         </style>
     </head>
     <body>
+
+        <h1>conformGridHeights.js</h1>
+
+        <p><a href="https://github.com/degdigital/conform-grid-heights">github.com/degdigital/conform-grid-heights</a></p>
+        
+        <h3>Recommended Usage</h3>
+
+        <pre>
+$(window).load(function() {
+    $(this).smartresize(function() {
+       $('.selector').data('conformGridHeight').resize(); 
+    });
+});</pre>
+        <p><small><em><a href="http://degdigital.github.io/conform-grid-heights/">Example uses Paul Irish's Debounced Resize plugin</a></em></small></p>
 
         <ul class="grid">
             <li>

@@ -24,3 +24,7 @@ So for the best usage including window resizing and image loading:
            $('.selector').data('conformGridHeight').resize(); 
         });
     });
+
+## Demo
+
+http://degdigital.github.io/conform-grid-heights/
