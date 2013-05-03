@@ -5,11 +5,9 @@ jQuery plugin to conform grid item heights
 
 ## Usage
 
-`
-$('.selector').conformGridHeight({
-    'selector': '> li'
-});
-`
+    $('.selector').conformGridHeight({
+        'selector': '> li'
+    });
 
 ## Wait for Images
 
@@ -21,10 +19,8 @@ If this is used in a responsive context, it will need to be wrapped with a resiz
 
 So for the best usage including window resizing and image loading:
 
-`
-$(window).load(function() {
-    $(this).smartresize(function() {
-       $('.selector').data('conformGridHeight').resize(); 
-    });    
-});
-`
+    $(window).load(function() {
+        $(this).smartresize(function() {
+           $('.selector').data('conformGridHeight').resize(); 
+        });
+    });

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <style>
+            body {
+                font-family: sans-serif;
+            }
+
+            .grid {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+            li {
+                display: inline-block;
+                width: 12em;
+                background: #eee;
+                vertical-align: top;
+                margin: 0 .5em .5em;
+            }
+            li p {
+                margin: .5em;
+            }
+            img {
+                display: block;
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+
+        <ul class="grid">
+            <li>
+                <p><img src="http://placehold.it/200x200" alt="" /></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem sit amet.</p>
+            <li>
+                <p><img src="http://placehold.it/200x200" alt="" /></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <li>
+                <p><img src="http://placehold.it/200x100" alt="" /></p>
+                <p>Tempus laoreet ornare at, varius sed magna. Etiam sollicitudin, ipsum sed sollicitudin</p>
+            <li>
+                <p><img src="http://placehold.it/200x300" alt="" /></p>
+                <p>Quisque risus sapien, tempus laoreet ornare at, varius sed magna. Etiam sollicitudin, ipsum sed sollicitudin</p>
+            <li>
+                <p><img src="http://placehold.it/200x200" alt="" /></p>
+                <p>Cras placerat placerat lorem</p>
+            <li>
+                <p><img src="http://placehold.it/200x100" alt="" /></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem sit amet.</p>
+            <li>
+                <p><img src="http://placehold.it/200x200" alt="" /></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem sit amet.</p>
+            <li>
+                <p><img src="http://placehold.it/200x200" alt="" /></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem sit amet.</p>
+            <li>
+                <p><img src="http://placehold.it/200x320" alt="" /></p>
+                <p>Cras placerat placerat lorem</p>
+        </ul>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="conformGridHeights.js"></script>
+        <script>
+            $('.grid').conformGridHeight({ 
+                'selector': '> li' 
+            });
+
+            $(window).load(function() { 
+                $(this).smartresize(function() { 
+                    $('.grid').data('conformGridHeight').resize(); 
+                }); 
+            });
+
+        </script>
+    </body>
+</html>
