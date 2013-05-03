@@ -67,7 +67,7 @@ $(window).load(function() {
        $('.selector').data('conformGridHeight').resize(); 
     });
 });</pre>
-        <p><small><em><a href="http://degdigital.github.io/conform-grid-heights/">Example uses Paul Irish's Debounced Resize plugin</a></em></small></p>
+        <p><small><em><a href="http://paulirish.com/2009/throttled-smartresize-jquery-event-handler/">Example uses Paul Irish's Debounced Resize plugin</a></em></small></p>
 
         <ul class="grid">
             <li>
@@ -100,6 +100,7 @@ $(window).load(function() {
         </ul>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="vendor/smartresize.js"></script>
         <script src="conformGridHeights.js"></script>
         <script>
             $('.grid').conformGridHeight({ 
@@ -109,6 +110,7 @@ $(window).load(function() {
             $(window).load(function() { 
                 $(this).smartresize(function() { 
                     $('.grid').data('conformGridHeight').resize(); 
+                    console.log(resize);
                 }); 
             });
 
