@@ -21,8 +21,6 @@
                 list-style: none;
             }
             li {
-                display: inline-block;
-                width: 12em;
                 background: #eee;
                 vertical-align: top;
                 margin: 0 .5em .5em;
@@ -50,6 +48,19 @@
 
             small {
                 font-size: .7em;
+            }
+
+            @media screen and (min-width: 22em) {
+                li {
+                    display: inline-block;
+                    width: 30%;                                    
+                }
+            }
+
+            @media screen and (min-width: 42em) {
+                li {
+                    width: 12em;
+                }
             }
         </style>
     </head>
